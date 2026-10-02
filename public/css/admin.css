@@ -1,0 +1,8 @@
+.admin-main{padding:40px 7%}
+.dashboard-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px;margin-bottom:30px}
+.dashboard-card{text-align:center}
+.dashboard-card h2{font-size:42px;color:#2563eb}
+.admin-table{width:100%;border-collapse:collapse;background:#fff;border-radius:10px;overflow:hidden}
+.admin-table th,.admin-table td{padding:12px;border-bottom:1px solid #e5e7eb;text-align:left}
+.admin-table th{background:#111827;color:#fff}
+.admin-toolbar{display:flex;justify-content:space-between;gap:15px;margin-bottom:20px}

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Admin Dashboard</title><link rel="stylesheet" href="../css/style.css"><link rel="stylesheet" href="../css/admin.css"></head>
+<body>
+<header class="navbar"><div class="logo">OnlineShop Admin</div><nav><a href="dashboard.html">Dashboard</a><a href="products.html">Products</a><a href="orders.html">Orders</a><a href="users.html">Users</a><a href="../index.html">Store</a><a href="#" onclick="logout()">Logout</a></nav></header>
+<main class="section">
+<h1>Admin Dashboard</h1>
+<div class="dashboard-grid">
+<div class="dashboard-card"><h2 id="productCount">0</h2><p>Products</p></div>
+<div class="dashboard-card"><h2 id="userCount">0</h2><p>Users</p></div>
+<div class="dashboard-card"><h2 id="orderCount">0</h2><p>Orders</p></div>
+</div>
+<div id="adminMessage"></div>
+</main>
+<script src="js/admin.js"></script>
+</body>
+</html>

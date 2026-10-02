@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Admin Products</title><link rel="stylesheet" href="../css/style.css"><link rel="stylesheet" href="../css/admin.css"></head>
+<body>
+<header class="navbar"><div class="logo">Admin Products</div><nav><a href="dashboard.html">Dashboard</a><a href="orders.html">Orders</a><a href="users.html">Users</a><a href="../index.html">Store</a></nav></header>
+<main class="section">
+<h1>Manage Products</h1>
+<form id="productForm" class="form-container">
+<input type="hidden" id="productId">
+<select id="categoryId" required><option value="">Select category</option></select>
+<input id="productName" placeholder="Product name" required>
+<textarea id="productDescription" placeholder="Description"></textarea>
+<input type="number" id="productPrice" placeholder="Price" min="0" step="0.01" required>
+<input type="number" id="productQuantity" placeholder="Quantity" min="0" required>
+<input id="productImage" placeholder="Image filename, e.g. phone.jpg">
+<button class="btn" type="submit">Save Product</button>
+<button class="danger-btn" type="button" onclick="resetProductForm()">Clear</button>
+<p id="productMessage"></p>
+</form>
+<div id="adminProducts"></div>
+</main>
+<script src="js/admin.js"></script>
+</body>
+</html>
